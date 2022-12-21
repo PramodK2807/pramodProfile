@@ -40,7 +40,7 @@ body {
 }
 
 
-header {
+.navbar {
     position: sticky;
     width: 100%;
     top: 0;
@@ -48,7 +48,7 @@ header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    background: var(--bg-color);
+    background: var(--bg-color)!important;
     padding: 13px 50px;
     transition: 0.2s;
     box-shadow: -3px -4px 8px rgb(171, 171, 171), 2px 2px 5px rgb(79, 76, 76);
@@ -79,8 +79,8 @@ header .shadow{
 }
 
 .navbar a {
-    font-size: 1.1rem;
-    padding: 0 20px;
+    font-size: 1.1rem !important;
+    padding: 0 20px !important;
     color: var(--text-color);
     font-weight: 500;
     align-items: center;
