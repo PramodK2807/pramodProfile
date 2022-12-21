@@ -1,5 +1,5 @@
 
-let header = document.querySelector("header");
+let header = document.querySelector("nav");
 let menu = document.querySelector("#menu-icon");
 let navbar = document.querySelector(".navbar");
 
@@ -10,23 +10,23 @@ window.addEventListener("scroll", () => {
 })
 
 
-menu.onclick = () => {
-    navbar.classList.toggle("navbar");
-    navbar.classList.toggle("active");
-}
+// menu.onclick = () => {
+//     navbar.classList.toggle("navbar");
+//     navbar.classList.toggle("active");
+// }
 
-window.onscroll = () => {
-    navbar.classList.remove("navbar");
-}
+// window.onscroll = () => {
+//     navbar.classList.remove("navbar");
+// }
 
 // menu.addEventListener("click" , () => {
 //     navbar.classList.toggle(".active");
 // });
 
 
-menu.onclick = () => {
-    navbar.classList.toggle(".active");
-};
+// menu.onclick = () => {
+//     navbar.classList.toggle(".active");
+// };
 
 const darkMode = document.querySelector(".darkmode"); 
 

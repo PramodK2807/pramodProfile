@@ -527,7 +527,7 @@ form , input, textarea{
         display: initial;
         color: var(--text-color);
     }
-    header .navbar{
+    /* header .navbar{
         position: absolute;
         left:0;
         top: -500px;
@@ -538,11 +538,11 @@ form , input, textarea{
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
         transition: 0.2s ease;
         text-align: center;
-    }
+    } */
 
     .active{
-        top: 100%;
-        display: block;
+        top: -100%;
+        display: none;
     }
 
     .navbar a{
