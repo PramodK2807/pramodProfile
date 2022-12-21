@@ -16,7 +16,7 @@ menu.onclick = () => {
 }
 
 window.onscroll = () => {
-    navbar.classList.remove("active");
+    navbar.classList.remove("navbar");
 }
 
 // menu.addEventListener("click" , () => {
