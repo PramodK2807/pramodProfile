@@ -2,139 +2,223 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="profile.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pramod | Personal WebPage</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class="navigation-bar">
-        <h1 class="name"><span>P</span>ramod</h1>
-        <div class="nav-bar">
-            <ul class="nav-ul">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#myskills">Skills</a></li>
-                <li><a href="#contactme">Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="logo">
-            <img src="image/photo_2022-11-12_13-06-06.jpg" alt="">
-        </div>
-    </nav>
-    <section class="home-bar" id="home">
-        <div class="home-container">
-            <div class="image">
-                <img src="image/photo_2022-11-12_13-06-06 - Copy.jpg" alt="">
-            </div>
-            <div class="home-content">
-                <p class="p1">Hi, There!</p>
-                <p class="p2">My name is <span class="s1">Pramod Kushwaha</span></p>
-                <p class="p3">I'm a <span>FrontEnd Web Developer</span></p>
-            </div>
-        </div>
-    </section>
+    <!-- NAV SECTION STARTS-->
 
-    <section class="about" id="about">
-        <h2 class="aboutme">About Me</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <img src="image/bach.jpg" alt="">
-            </div>
-            <div class="about-content">
-                <h4>Hello, This is Pramod Kushwaha</h4>
-                <p>I have completed my <b>Bachelor's of Technology</b> from <b>Mechanical Engineering</b> with <b>A+</b>
-                    Grade</p>
-                <p>I want to be Full Stack Web Developer & I'm preparing to be Full Stack Web Developer with Edureka!
-                </p>
-                <p>This is a great experience here</p>
-            </div>
-        </div>
-    </section>
-    <hr>
-
-    <section class="skills" id="myskills">
-        <h1 class="skills-s">SKILLS</h1>
-        <div class="container-skills">
-            <div class="skills-c">
-                <div class="sss">
-                    
-                    <img src="image/html.png" alt="">
-                    <label for="">HTML</label>
-                    <progress value="50" max="100">HTML</progress>
-                </div>
-                <div class="sss">
-                    
-                    <img src="image/CSS3_logo.svg.png" alt="">
-                    <label for="">CSS</label>
-                    <progress value="50" max="100">CSS</progress>
-                </div>
-                <div class="sss">
-                    
-                    <img src="image/JavaScript-Logo.png" alt="">
-                    <label for="">JavaScript</label>
-                    <progress value="5" max="100">JavaScript</progress>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contactme">
-        <h1>Contact Me</h1>
-        <div class="form-container">
-            <div class="form">
-                <form action="">
-                    <label for="name">Name : </label>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Name...">
-                    <label for="email">Email : </label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email...">
-                    <label for="enquire">Enquire : </label>
-                    <textarea name="enquire" id="enquire" cols="30" rows="5"
-                    placeholder="Describe what you want?"></textarea>   
-                </form>
-                <button class="submit">Submit</button>
-            </div>
-            <div class="links">
-                <h2>Connect me on Social Network</h2>
-                <ul class="icons">
-                    <li >
-                        <a href="https://www.facebook.com/profile.php?id=100070620053656" target="_blank">
-                            <img src="image/240px-Facebook_logo_(square).png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/" target="_blank">
-                            <img src="image/640px-Instagram_icon.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com/" target="_blank">
-                            <img src="image/youtube-play-red-logo-png-transparent-background-6.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/pramod-kushwaha-1a35ba153/" target="_blank">
-                            <img src="image/linkdin.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="https://gist.github.com/PramodK2807" target="_blank">
-                            <img src="image/25231.png" alt=""></a>
-                    </li>
-                    <li>
-                        <a href="mailto:pramodkushwaha1328@gmail.com" target="_blank">
-                            <img src="image/Gmail_Logo_512px.png" alt=""></a>
-                    </li>
-                </ul>
-            </div>
+    <header>
+        <a href="#" class="logo"><span>P</span>ramod</a>
+        <div class="bx bx-menu" id="menu-icon" ></div>
+        
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact" >Contact</a></li>
+            <div class="bx bx-moon darkmode" id="bx bx-sun" onclick="changeMode()"></div>
             
+        </ul>
+    </header>
+
+    <!-- NAV SECTION ENDS -->
+
+
+
+    <!-- HOME SECTION STARTS -->
+    <section class="home container row" id="home">
+        <div class="home-img col-md-4">
+            <img src="images/pexels-andrew-personal-training-697509-removebg-preview.png" alt="">
+        </div>
+        <div class="home-text col-md-8">
+            <div class="social">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+            </div>
+            <span>Hello I'm</span>
+            <h1>Pramod Kushwaha</h1>
+            <h2>Frontend Developer</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum non possimus aspernatur consequatur
+                deleniti praesentium vero nesciunt sequi laborum rerum.</p>
+            <a href="#" class="btn"> Download CV</a>
         </div>
     </section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29342.79879946299!2d79.95124069516844!3d23.175679611570178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020616bc43e3b9!2sJabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1668501538041!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-    <footer>
-        <p> &LeftArrow; &copy; made with &hearts; by Pramod &RightArrow;</p>
-    </footer>
+    <!-- HOME SECTION ENDS -->
 
 
+    <!-- ABOUT SECTION STARTS  -->
+
+    <div class="about container" id="about">
+        <div class="heading">
+            <h2>About Me</h2>
+            <span>Introduction</span>
+        </div>
+        <div class="about-container row">
+            <div class="about-img col-md-4">
+                <img src="images/pexels-andrew-personal-training-697509-removebg-preview.png" alt="">
+            </div>
+            <div class="about-text col-md-8">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, a. Amet voluptas natus aperiam.
+                    Id ipsa temporibus ab amet eum.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatibus minima blanditiis ad
+                    nobis voluptatum temporibus, et aperiam perspiciatis veniam.
+                </p>
+                <div class="information">
+                    <div class="info-box">
+                        <i class="bx bxs-user"></i>
+                        <span>Pramod Kushwaha</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="bx bxs-phone"></i>
+                        <span>+91 6260392809</span>
+                    </div>
+                    <div class="info-box gmail">
+                        <i class="bx bxs-envelope"></i>
+                        <span>pramodkushwaha1328@gmail.com</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span><a href="https://www.linkedin.com/in/pramod-kushwaha-1a35ba153/">Pramod
+                                Kushwaha</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION ENDS  -->
+
+
+    <!-- SKILLS SECTION STARTS -->
+
+    <div class="skills container" id="skills">
+        <div class="heading">
+            <h2>Skills</h2>
+            <span>My Skills</span>
+        </div>
+        <div class="skills-container row">
+            <div class="bars col-md-4">
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>77%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar html-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>70%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar css-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>40%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar javascript-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>10%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img col-md-4">
+                <img src="images/pexels-pixabay-355948-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- SKILLS SECTION ENDS -->
+
+
+    <!-- SERVICES SECTION STARTS  -->
+
+    <section class="services container" id="services">
+        <div class="heading">
+            <h2>Services</h2>
+            <span>Our Services</span>
+        </div>
+
+        <div class="services-container row">
+            <div class="services-box col-md-3 col-sm-12">
+                <i class="bx bx-code-alt"></i>
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
+                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="services-box col-md-3 col-sm-12">
+                <i class="bx bx-brush"></i>
+                <h3>UI/UX</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
+                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
+                <a href="">Learn More</a>
+            </div>
+            <div class="services-box col-md-3 col-sm-12">
+                <i class="fa-brands fa-android"></i>
+                <h3>App Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
+                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES SECTION ENDS -->
+
+
+    <!-- CONTACT SECTION STARTS  -->
+
+    <div class="contact " id="contact">
+        <div class="container">
+            <div class="heading">
+                <h2>Contact</h2>
+                <span>Connect With Us</span>
+            </div>
+            <div class="contact-details row">
+                <div class="contact-form col-md-4">
+                    <form action="">
+                        <input type="text" placeholder="Your name ">
+                        <input type="Email" placeholder="Your Email ">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="write something"></textarea>
+                        <input type="button" value="send" class="contact-button">
+                    </form>
+                </div>
+                <div class="map col-md-7">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52695.842826677734!2d79.91632801105551!3d23.178590442117688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020616bc43e3b9!2sJabalpur%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1671452749873!5m2!1sen!2sin" ></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CONTACT SECTION ENDS  -->
+
+    <div class="footer">
+        <div class="footer-social container">
+            <div>
+            <a href=""><i class="bx bxl-facebook"></i></a>
+            <a href=""><i class="bx bxl-twitter"></i></a>
+            <a href=""><i class="bx bxl-instagram"></i></a>
+            <a href=""><i class="bx bxl-youtube"></i></a>
+            </div>
+            <p>&copy; Pramod | All Right Reserved</p>
+        </div>
+        
+    </div>
+
+    <script src="javascript.js"></script>
 </body>
 
 </html>
