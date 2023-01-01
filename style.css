@@ -120,6 +120,13 @@ header .shadow{
 
 /* HOME SECTION */
 
+.myName{
+    font-size: 35px !important;
+}
+
+.careerCont, career{
+    font-size: 25px !important;
+}
 
 .home {
     min-height: 85vh;
@@ -322,8 +329,9 @@ span {
 .card-container{
     margin: 20px auto;
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    /* align-items: center; */
 }
 
 .card-container h2{
@@ -338,14 +346,11 @@ span {
     padding: 5px;
     width: 350px;
     border-radius: 6px;
+    /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
 }
 
 .card-container .project-card a img{
     width: 100%;
-}
-
-.project-card{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card-container a{
@@ -359,11 +364,8 @@ span {
     padding-top: 15px;
 }
 
-.project-card:hover{
-    color: white;
-    background-color: var(--main-color);
-    transition: 0.3s ease-in-out all;
-}
+
+
 
 
 
@@ -482,11 +484,12 @@ form , input, textarea{
 }
 
 
-
-
-
-
-
+#darkBtn{
+    outline: none;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+}
 
 
 
@@ -549,12 +552,6 @@ form , input, textarea{
         padding: 1.5rem;
         display: block;
         background-color: var(--bg-color);
-    }
-    #darkmode{
-        position: absolute;
-        top: 1.4rem;
-        right: 2rem;
-
     }
 
     .scroll-down{
