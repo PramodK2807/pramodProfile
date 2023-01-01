@@ -9,54 +9,42 @@ window.addEventListener("scroll", () => {
 
 })
 
-const darkMode = document.querySelector("#darkBtn");
-console.log(darkMode.classList);
 
-darkMode.addEventListener("click", () => {
-    if(darkMode.classList.contains("bx-moon")){
-        darkMode.classList.remove("bx-moon");
-        darkMode.classList.add("bx-sun");   
-    }
-    else{
-        darkMode.classList.add("bx-moon");
-        darkMode.classList.remove("bx-sun"); 
-    }
-})
+// menu.onclick = () => {
+//     navbar.classList.toggle("navbar");
+//     navbar.classList.toggle("active");
+// }
+
+// window.onscroll = () => {
+//     navbar.classList.remove("navbar");
+// }
+
+// menu.addEventListener("click" , () => {
+//     navbar.classList.toggle(".active");
+// });
+
+
+// menu.onclick = () => {
+//     navbar.classList.toggle(".active");
+// };
+
+const darkMode = document.querySelector(".darkmode"); 
 
 function changeMode(){
     let myBody = document.body;
     myBody.classList.toggle("dark-bg");
+
+    if(darkMode.classList.contains("bx-moon")){
+        darkMode.classList.replace("bx-moon", "bx-sun");
+        darkMode.classList.add( "bx-sun");
+    }
+
+    else{
+        darkMode.classList.replace( "bx-sun", "bx-moon");
+        darkMode.classList.add( "bx-moon");
+    }
 }
 
 
-const careerEl = document.querySelector(".career");
-
-careerEl.style.color = "red";
-careerEl.style.fontWeight = "bold";
-careerEl.style.fontSize = "25px";
-
-const careersArray = ["Frontend Developer", "Freelancer", "YouTuber", "Engineer"];
-
-let careerIndex = 0;
-
-let characterIndex = 0;
-
-updateText();
 
 
-function updateText() {
-    characterIndex++;
-    careerEl.innerText = ` ${careersArray[careerIndex].slice(0,1) === "E"? "An":"A"} ${careersArray[careerIndex].slice(0,characterIndex)}`;
-
-    
-
-
-    if(characterIndex === careersArray[careerIndex].length){
-        careerIndex++;
-        characterIndex = 0;
-    }
-    if(careerIndex === careersArray.length ){
-        careerIndex= 0;
-    }
-    setTimeout(updateText, 150)
-}
