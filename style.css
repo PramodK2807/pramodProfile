@@ -327,9 +327,9 @@ span {
 
 /* PROJECTS */
 .card-container{
-    margin: 20px auto;
+    margin: 20px 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     /* align-items: center; */
 }
@@ -343,10 +343,16 @@ span {
     border-top: 5px solid var(--main-color);
     box-shadow: 0px 3px 7px rgba(66, 71, 71, 0.95);
     margin: 10px auto;
-    padding: 5px;
+    padding: 5px 0;
     width: 350px;
     border-radius: 6px;
+    cursor: pointer;
     /* box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); */
+}
+
+.card-container .project-card:hover{
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.05);
 }
 
 .card-container .project-card a img{
