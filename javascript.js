@@ -60,3 +60,14 @@ function updateText() {
     }
     setTimeout(updateText, 150)
 }
+
+
+
+const allATags = document.getElementsByTagName("a");
+
+// console.log(allATags);
+for (let i=7; i<allATags.length; i++){
+    // console.log(allATags[i]);
+    allATags[i].setAttribute("target" ,"_blank");
+    // console.log(allATags[i]);
+}
