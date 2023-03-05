@@ -18,49 +18,52 @@
 <body>
     <!-- NAV SECTION STARTS-->
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand logo" href="#"><span>P</span>ramod</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                    <button class="bx bx-moon" id="darkBtn" onclick="changeMode()"></button>
-            </div>
+          <a class="navbar-brand" href="#">Pramod</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <button class="bx bx-moon" id="darkBtn" onclick="changeMode()"></button>
+             </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
+
+    
 
     <!-- NAV SECTION ENDS -->
 
 
 
     <!-- HOME SECTION STARTS -->
-    <section class="home container row" id="home">
+    <section class="home container mt-5 row" id="home">
         <div class="home-img col-md-4">
-            <img src="images/right.jpg" alt="">
+            <img
+                
+                      src="https://i.ibb.co/sRLYG4B/IMG-20230226-134933.jpg"
+                      alt="image"
+                    />
         </div>
         <div class="home-text col-md-8">
             <div class="social">
@@ -71,8 +74,10 @@
             <span>Hello I'm</span>
             <h1 class="myName">Pramod Kushwaha</h1>
             <h2 class="careerCont" >I am <span class="career"></span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum non possimus aspernatur consequatur
-                deleniti praesentium vero nesciunt sequi laborum rerum.</p>
+           
+                  <p  >An enthusiastic developer currently working as a freelancer, looking for an opportunity to shape my career in the field of Web Development </p>
+                  <p>I design and code beautifully simple things, and I love what I do.</p>
+                
             <a href="#" class="btn"> Download CV</a>
         </div>
     </section>
@@ -81,21 +86,22 @@
 
     <!-- ABOUT SECTION STARTS  -->
 
-    <div class="about container" id="about">
+    <div class="about container my-3" id="about">
+       
         <div class="heading">
+            <hr>
             <h2>About Me</h2>
             <span>Introduction</span>
         </div>
         <div class="about-container row">
             <div class="about-img col-md-4">
-                <img src="images/Screenshot_2022-07-16-11-27-48-63_1c337646f29875672b5a61192b9010f9 (1) - Copy.jpg" alt="">
+                <img
+                src="https://i.ibb.co/sRLYG4B/IMG-20230226-134933.jpg"
+                alt="image"
+              />
             </div>
-            <div class="about-text col-md-8">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, a. Amet voluptas natus aperiam.
-                    Id ipsa temporibus ab amet eum.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae voluptatibus minima blanditiis ad
-                    nobis voluptatum temporibus, et aperiam perspiciatis veniam.
-                </p>
+            <div class="about-text col-md-8 py-3">
+                Hello, <br /> I've Completed my Graduation in 2022, then I joined Full Stack Web Development (MERN) interneship and training program with Edureka & completed in March 2023.
                 <div class="information">
                     <div class="info-box">
                         <i class="bx bxs-user"></i>
@@ -107,7 +113,7 @@
                     </div>
                     <div class="info-box gmail">
                         <i class="bx bxs-envelope"></i>
-                        <span>pramodkushwaha1328@gmail.com</span>
+                        <span><a href="mailto:pramodkushwaha1328@gmail.com">Gmail</a></span>
                     </div>
                     <div class="info-box">
                         <i class="fa-brands fa-linkedin"></i>
@@ -117,6 +123,8 @@
                 </div>
             </div>
         </div>
+
+       
     </div>
     <!-- ABOUT SECTION ENDS  -->
 
@@ -125,6 +133,7 @@
 
     <div class="skills container" id="skills">
         <div class="heading">
+            <hr>
             <h2>Skills</h2>
             <span>My Skills</span>
         </div>
@@ -132,7 +141,7 @@
             <div class="bars col-md-4">
                 <div class="bars-box">
                     <h3>HTML</h3>
-                    <span>77%</span>
+                    <span>75%</span>
                     <div class="light-bar"></div>
                     <div class="percentage-bar html-bar"></div>
                 </div>
@@ -144,19 +153,48 @@
                 </div>
                 <div class="bars-box">
                     <h3>JavaScript</h3>
-                    <span>40%</span>
+                    <span>55%</span>
                     <div class="light-bar"></div>
                     <div class="percentage-bar javascript-bar"></div>
                 </div>
                 <div class="bars-box">
                     <h3>React</h3>
-                    <span>10%</span>
+                    <span>60%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>NodeJs</h3>
+                    <span>60%</span>
+                    <div class="light-bar"></div>
+                    <div class="percentage-bar react-bar"></div>
+                </div>
+                <div class="bars-box">
+                    <h3>MongoDb</h3>
+                    <span>60%</span>
                     <div class="light-bar"></div>
                     <div class="percentage-bar react-bar"></div>
                 </div>
             </div>
-            <div class="skills-img col-md-4">
-                <img src="images/pexels-pixabay-355948-removebg-preview.png" alt="">
+            <div class="skills-content col-md-7 fs-5">
+                I have created few Projects on these Technologies & one of these Project i.e. Book My Show Clone.
+
+                Book My Show Clone is a Full Stack Project that I have created in which different Technologies I have used and all the different API created
+<br>
+<br>
+                 <h5>Technologies used for Book My Show Clone</h5>
+                <ul>
+                    
+                    <li>React</li>
+                    <li>NodeJs</li>
+                    <li>MongoDb</li>
+                    <li>RestApi</li>
+                    <li>HTML, CSS & JavaScript</li>
+                </ul>
+                <!-- <button class="btn"> -->
+                    <a class="btn" target="_blank" href="https://bookmyshow-0jb6.onrender.com/">Project Link</a>
+                    
+                <!-- </button> -->
             </div>
         </div>
     </div>
@@ -164,8 +202,9 @@
 
     <!-- PROJECTS SECTION STARTS -->
 
-    <section class="projects container" id="projects">
+    <section class="projects container my-5" id="projects">
         <div class="heading">
+            <hr>
             <h2>Projects</h2>
             <span>My Projects</span>
         </div>
@@ -180,11 +219,11 @@
             </div>
             <div class="project-card ">
                 <div>
-                    <a href="https://pramodk2807.github.io/BookMyShow-Clone/"><img
-                            src="images/Screenshot_20221221_020049.png" alt="">
+                    <a href="https://bookmyshow-0jb6.onrender.com/"><img
+                            src="images/Screenshot 2023-03-05 113028.png" alt="">
                 </div>
                 <h2>Book My Show Clone</h2>
-                <p>You can book any ticket for Movie, Events, Sports</p>
+                <p>MERN Project & Token based Login Logout Functionality</p>
 
                 </a>
             </div>
@@ -227,39 +266,7 @@
     </section>
     <!-- PROJECTS SECTION ENDS -->
 
-    <!-- SERVICES SECTION STARTS  -->
-
-    <section class="services container" id="services">
-        <div class="heading">
-            <h2>Services</h2>
-            <span>Our Services</span>
-        </div>
-
-        <div class="services-container row">
-            <div class="services-box col-md-3 col-sm-12">
-                <i class="bx bx-code-alt"></i>
-                <h3>Web Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
-                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
-                <a href="">Learn More</a>
-            </div>
-            <div class="services-box col-md-3 col-sm-12">
-                <i class="bx bx-brush"></i>
-                <h3>UI/UX</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
-                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
-                <a href="">Learn More</a>
-            </div>
-            <div class="services-box col-md-3 col-sm-12">
-                <i class="fa-brands fa-android"></i>
-                <h3>App Design</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt illum repellendus recusandae
-                    voluptatum alias iusto unde aut voluptates, odit neque?</p>
-                <a href="">Learn More</a>
-            </div>
-        </div>
-    </section>
-    <!-- SERVICES SECTION ENDS -->
+   
 
 
     <!-- CONTACT SECTION STARTS  -->
