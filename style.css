@@ -56,7 +56,7 @@ body {
     align-items: baseline;
     justify-content: space-between;
     background: var(--bg-color)!important;
-    padding: 13px 50px;
+    padding: 13px 0;
     transition: 0.2s;
     box-shadow: -3px -4px 8px rgb(171, 171, 171), 2px 2px 5px rgb(79, 76, 76);
     z-index: 101;
@@ -147,9 +147,6 @@ header .shadow{
     margin: auto;
 }
 
-/* .home-text{
-    padding: 20px 0;
-} */
 .home-text span {
     font-size: var(--medium-font);
     font-weight: 500;
@@ -308,8 +305,16 @@ span {
     border-radius: 0.6rem;
 }
 
+.skills-content{
+    text-align: justify;
+}
+
+.skills-content ul li{
+    list-style: square !important;
+}
+
 .html-bar {
-    width: 77%;
+    width: 75%;
 }
 
 .css-bar {
@@ -317,11 +322,11 @@ span {
 }
 
 .javascript-bar {
-    width: 40%;
+    width: 55%;
 }
 
 .react-bar {
-    width: 10%;
+    width: 60%;
 }
 
 
@@ -498,14 +503,16 @@ form , input, textarea{
 }
 
 
+.home-text p{
+    font-size: 17px !important;
+    font-weight: 500;
+}
 
 
 
 
 @media (max-width:600px) {
-    .information .gmail {
-        display: none;
-    }
+    
     .home-text h1{
         font-size: 30px;
         transition: 0.3s;
@@ -531,23 +538,19 @@ form , input, textarea{
 }
 
 
+@media (max-width:444px){
+    .myName{
+        font-size: 26px !important;
+    }
+}
+   
+
 @media (max-width:768px){
     #menu-icon{
         display: initial;
         color: var(--text-color);
     }
-    /* header .navbar{
-        position: absolute;
-        left:0;
-        top: -500px;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background: var(--bg-color);
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-        transition: 0.2s ease;
-        text-align: center;
-    } */
+
 
     .active{
         top: -100%;
@@ -564,6 +567,24 @@ form , input, textarea{
         display: none;
     }
 
+    .home-img{
+        width: 200px !important;
+        height: 200px !important;
+        margin: 50px auto !important;
+    }
+    .home-img img{
+        width: 100%;
+    }
+
+
+    .about-img{
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+    }
+    .about-img img{
+        width: 100%;
+    }
    
 
 }
